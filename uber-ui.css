@@ -1,0 +1,256 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav1{
+    color: white;
+}
+.navbar {
+        padding: 0.5rem 5rem;
+        font-weight: normal;
+        font-weight:normal;
+        background-color: black;
+}
+.navbar ul li :hover{
+    background-color: rgb(58, 55, 55);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: white;
+}
+.navbar ul li{
+    margin-left: 8px;
+}
+body{
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.prtool{
+    background-color: black;
+    border: none;    
+    color: white;
+}
+.prtool li{
+    text-decoration: none;  
+}
+.prtool li button{
+    background-color: white;
+}
+.bg{
+    background-image: url(./images/bg-home.jpg);
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.form{
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+    position: relative;
+    margin: 95px;
+    
+}
+.mat{
+    padding-top: 20px;
+    font-size: smaller;
+    font-weight: 400;
+    display: inline-flex;
+    width: fit-content;
+    
+}
+.link{
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+.link:hover{
+    color: grey;
+    
+}
+.mat div{
+    float: left;
+   
+}
+.form .container h1{
+    margin-left: 40px;
+    margin-top: 30px;
+    
+}
+.form .container p{
+    margin-left: 40px;
+    margin-top: 25px;
+    
+}
+.form div button {
+    margin-left: 40px;
+    margin-top: 25px;
+    color: white;
+    border: none;
+    background-color: black;
+    padding: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+}
+.hov:hover{
+    border-bottom:solid black;
+    padding-bottom: 4px;
+}
+.bg1{
+    background-image: url(./images/HP-U4B-NYC-bkg.png);
+    height: auto;
+    width: 100%;
+    padding: 64px;
+    padding-left: 82px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ss{
+    
+    margin-top: 25px;
+    color: white;
+    border: none;
+    background-color: black;
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+}
+.bg1 p{
+    padding-top: 20px;
+}
+.mid img{
+    height: 50vh;   
+    width: 96%;
+}
+.mid{
+    padding-top: 6%;
+}
+.pd{
+   padding-left: 8%;
+   padding-top: 8%;
+}
+.pd h1{
+    padding-bottom: 3%;
+}
+.pd p{
+    padding-bottom: 3%;
+}
+.pd a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgb(77, 76, 76);
+}
+.im1{
+    height: 100%;
+    width: 100%;
+}
+.im1 a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid rgb(77, 76, 76);
+}
+.typ div{
+    margin-bottom: 4%;
+}
+.typ h5{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.typ a{
+    color: black;
+    border-bottom: 1px solid lightslategray;
+    text-decoration: none;
+}
+.c1{
+    background-color: #f6f6f6;
+    padding-bottom: 60px;
+}
+.c1 .row div{
+    background-color: white;
+    font-size: x-large;
+    padding: 2px;
+   
+}
+.footer{
+    background-color: black;
+    max-width: 100%;
+    padding-bottom: 40px;
+    max-height: 100%;
+}
+.col-link{
+   text-decoration: none;
+   list-style-type: none;
+   
+}
+.footer h4{
+    color: whitesmoke;
+    padding-top: 80px;
+   
+} 
+.footer p{
+    color: whitesmoke;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.footer h5{
+    color: whitesmoke;
+    padding-top: 50px;
+}
+.footer li a{
+    color: whitesmoke;
+    font-size: 14px;
+    
+}
+.col-link .col-margin{
+    padding-top: 3%;
+}
+.col-icon{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.col-icon-img{
+    margin-top: 40px;
+}
+.hover img:hover{
+    color: pink;
+}
+
+.APP{
+    max-width: 100px;
+    float: right;
+    padding-top: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.list-style{
+    text-decoration: none;
+    list-style: none;
+    float: left;
+    text-align:right;
+    padding-top: 30px;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 18px;
+   
+
+}
+.col-md-top{
+    padding-top: 40px;
+    
+}
+
+.col-md-top li{
+    float: right;
+  
+}
+.col-md-top li a{
+    color: grey;
+}
+.col-md-top p{
+    font-size: 15px;
+    color: grey;
+}

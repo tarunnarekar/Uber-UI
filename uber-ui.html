@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="uber-ui.css">
+    <script src="https://kit.fontawesome.com/a286a2d5f1.js" crossorigin="anonymous"></script>
+    <title>Uber-UI</title>
+    <style>
+        .how:hover {
+            background-color: whitesmoke;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navigation -->
+
+    <head>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a style="color: white; padding-right: 20px;font-size:x-large;" class="navbar-brand" href="#">Uber</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse nav1" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Company
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="how">
+                            <a class="dropdown-item" id="how" href="#footer">About Us</a>
+                            <a class="dropdown-item" id="how" href="#footer">Offerings</a>
+                            <a class="dropdown-item" id="how" href="#footer">About us</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a style="color: white;" class="nav-link" href="#safe">Safety <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link" href="#footer">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link" href="#">COVID-19 resources</a>
+                    </li>
+
+                </ul>
+                <ul style="margin-left: 29%;" class="my-2 my-lg-0 navbar-nav mr-auto">
+                    <li>
+
+                        <span class="dropdown">
+                            <button class="btn btn- dropdown prtool" type="button" data-toggle="dropdown"><i
+                                    class="fa fa-globe">&nbsp;&nbsp;&nbsp;EN</i>
+                                <span class="caret"></span></button>
+                            <ul style="margin-top: 19px;" class="dropdown-menu">
+                                <li><a href="#footer">English</a></li>
+                                <li><a href="#footer">Hindi</a></li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="dropdown">
+                            <button class="btn btn- dropdown prtool" type="button" data-toggle="dropdown"><i
+                                    class="fa fa-th">&nbsp;&nbsp;&nbsp;Products</i>
+                                <span class="caret"></span></button>
+                            <ul style="margin-top: 19px;" class="dropdown-menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Ride</a></li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="dropdown">
+                            <button class="btn btn- dropdown prtool" type="button" data-toggle="dropdown"><i
+                                    class="fa fa-user-o">Log In</i>
+                                <span class="caret"></span></button>
+                            <ul style="margin-top: 19px; width: fit-content;padding:20px 20px;" class="dropdown-menu">
+                                <form action="#">
+                                    <div class="input_box">
+                                        <i class="fas fa-user"></i>
+                                        <input type="text" placeholder="Email or Phone" required>
+                                        <div class="icon"></div>
+                                    </div>
+                                    <div class="input_box">
+                                        <i class="fas fa-lock"></i>
+                                        <input type="password" placeholder="Password" required>
+                                        <div class="icon"></div>
+                                    </div>
+                                    <div class="option_div">
+                                        <div class="check_box">
+                                            <input type="checkbox">
+                                            <span>Remember me</span>
+                                        </div>
+                                        <div class="forget_div">
+                                            <a href="#">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                    <div class="input_box button">
+                                        <input type="submit" value="Login">
+                                    </div>
+                                    <div class="sign_up">
+                                        Not a member? <a href="#">Signup now</a>
+                                    </div>
+                                </form>
+                            </ul>
+
+
+                        </span>
+                    </li>
+                    <li>
+                        <button
+                            style="color:black;background-color: white; border-radius: 30px;font-size: small;font-weight: bold;"
+                            class="btn btn- dropdown prtool" type="button" data-toggle="dropdown">Sign up
+                            <span class="caret"></span></button>
+                        <ul style="margin-top: 19px; width: fit-content;padding:20px 20px;" class="dropdown-menu">
+                            <form action="#">
+                                <div class="input_box">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" placeholder="Email or Phone" required>
+                                    <div class="icon"></div>
+                                </div>
+                                <div class="input_box">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" placeholder="Password" required>
+                                    <div class="icon"></div>
+                                </div>
+                                <div class="input_box">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" placeholder="Re Enter Password" required>
+                                    <div class="icon"></div>
+                                </div>
+                                <div class="option_div">
+                                    <div class="check_box">
+                                        <input type="checkbox">
+                                        <span>Agree</span>
+                                    </div>
+                                </div>
+                                <div class="input_box button">
+                                    <input type="submit" value="Login">
+                                </div>
+                                <div class="sign_up">
+                                    Already Member <a href="#">Login</a>
+                                </div>
+                            </form>
+                        </ul>
+                    </li>
+
+
+                </ul>
+                </form>
+            </div>
+        </nav>
+    </head>
+    <!-- section 1 -->
+    <section>
+        <div class="bg row">
+            <div class="form col-md-5">
+                <div class="mat">
+                    <div style="margin-left: 56px;" class="col-md-4">
+                        <a class="link" href="./index.html">
+                            <div>
+                                <img src="./images/Earn-filled.svg" alt="Earn-filled"><br><br>
+                                Drive or <br> Deliver
+                            </div>
+                        </a>
+                    </div>
+                    <div style="margin-left: 20px;" class="col-md-4">
+                        <a class="link" href="./eat.html">
+                            <div class="col-md-4">
+                                <img src="./images/restaurant-outlined.svg" alt="Earn-filled"><br><br>
+                                Eat
+                            </div>
+                        </a>
+                    </div>
+                    <div style="margin-left: 40px;" class="col-md-4">
+                        <a class="link" href="./ride.hml">
+                            <div class="col-md-4">
+                                <img src="./images/car-front-outlined.svg" alt="Earn-filled"><br><br>
+                                Ride
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+                <hr>
+                <div class="container">
+                    <h1>Get in the driver's <br> seat and get paid</h1>
+                    <p>Drive on the platform with the largest network of active riders.</p>
+                </div>
+                <div class="container">
+                    <button>Signup to Drive</button>
+                </div>
+                <div class="container">
+                    <br>
+                    <a style="color: black;text-decoration: none; margin-left: 40px;" class="hov" href="#">Learn more
+                        about driving and delivering</a>
+                </div>
+                <br><br>
+
+            </div>
+
+
+
+
+        </div>
+    </section>
+    <!-- section 2-->
+    <section class="bg1">
+        <div>
+            <h1>Uber for Business</h1>
+        </div>
+        <p>Transform the way your company moves and feeds its people.</p>
+        <button class="ss"><strong>See how</strong></button>
+    </section>
+    <section class="container mid">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./images/rentals2.jpg" alt="rental2">
+            </div>
+            <div></div>
+            <div class="col-md-6 pd">
+                <h1>Uber Rentals</h1>
+                <p>Book Rentals to save time with one car and driver for your multi-stop trips.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <div class="row">
+            <div style="padding-left: 0px;" class="col-md-6 pd">
+                <h1>Uber Intercity</h1>
+                <p>Book Intercity to head outstation anytime in convenient and affordable cars.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div></div>
+            <div class="col-md-6">
+                <img style="margin-left: 12%;" src="./images/rentals1.jpg" alt="rental2">
+            </div>
+        </div>
+    </section>
+    <br><br><br><br>
+    <!-- section 3 -->
+    <section id="safe" class="container">
+        <h1>
+            Focused on safety, wherever you go</h1>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="im1">
+                    <img src="./images/Safety_Home_Img2x.jpg" alt=""><br><br>
+                    <h4>Our commitment to your safety</h4>
+                    <p>With every safety feature and every standard in our Community Guidelines, we're committed to
+                        helping to create a safe environment for our users.</p>
+                    <a href="#">Read about our Community Guidelines</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#">See all safety features</a>
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div style="margin-left: 5%;" class="im1">
+                    <img src="./images/Cities_Home_Img2x.jpg" alt=""><br><br>
+                    <h4>Setting 10,000+ cities in motion</h4>
+                    <p>The app is available in thousands of cities worldwide, so you can request a ride even when you’re
+                        far from home.</p>
+                    <a href="#">View all cities</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br>
+    <!--section 4 -->
+
+    <section class="container">
+        <div class="row typ">
+            <div class="col-md-4">
+                <img src="./images/person-multiple-outlined.svg" alt=""><br>
+                <h5>About us</h5>
+                <p>Find out how we started, what drives us, and how we’re igniting opportunity.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="col-md-4">
+                <img src="./images/document-outlined.svg" alt="">
+                <h5>Newsroom</h5>
+                <p>See announcements about our latest releases, initiatives, and partnerships.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="col-md-4">
+                <img src="./images/home-outlined.svg" alt="">
+                <h5>Global citizenship</h5>
+                <p>Read about our commitment to making a positive impact in the cities we serve.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </section>
+    <div class="c1">
+        <div class="container">
+            <h3>There is more to love in this app</h3>
+            <div style="padding-right: 40px;" class="row">
+                <div class="col-md-5">
+                    <img src="./images/Driver-App-logo.png" alt="">
+                    Download the driver app ->
+                </div>
+
+                <div style="padding-right: 0px;margin-left: 8%;" class="col-md-6">
+                    <img src="./images/uber-logo.png" alt="">
+                    Download the driver app ->
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container">
+        <br><br>
+        <div class="row">
+            <div class="col-md-5">
+
+                <h1 style="border-bottom: 1px solid black;padding-bottom: 30px;">Sign up to
+                    drive&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-></h1>
+            </div>
+
+            <div style="text-align: right;" class="col-md-6">
+
+                <h1 style="border-bottom: 1px solid black;padding-bottom: 30px;width: fit-content;padding-left: 20%;">
+                    Sign up to drive &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-></h1>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <!-- footer  -->
+    <section id="footer" class="footer">
+        <div class="container">
+            <h4>Uber</h4>
+            <p>Visit Help Center</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Company</h5>
+                    <ul class="col-link">
+                        <li class="col-margin"><a href="#">About us</a></li>
+                        <li class="col-margin"><a href="#">Our offerings</a></li>
+                        <li class="col-margin"><a href="#">Newsroom</a></li>
+                        <li class="col-margin"><a href="#">Investors</a></li>
+                        <li class="col-margin"><a href="#">Blog</a></li>
+                        <li class="col-margin"><a href="#">Careers</a></li>
+                        <li class="col-margin"><a href="#">AI</a></li>
+                        <li class="col-margin"><a href="#">Gift cards</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Products</h5>
+                    <ul class="col-link">
+                        <li class="col-margin"><a href="#">Ride</a></li>
+                        <li class="col-margin"><a href="#">Drive</a></li>
+                        <li class="col-margin"><a href="#">Deliver</a></li>
+                        <li class="col-margin"><a href="#">Eat</a></li>
+                        <li class="col-margin"><a href="#">Uber for Business</a></li>
+                        <li class="col-margin"><a href="#">Uber Freight</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Global citizenship</h5>
+                    <ul class="col-link">
+                        <li class="col-margin"><a href="#">Safety</a></li>
+                        <li class="col-margin"><a href="#">Diversity and Inclusion</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Travel</h5>
+                    <ul class="col-link">
+                        <li class="col-margin"><a href="#">Airports</a></li>
+                        <li class="col-margin"><a href="#">Cities</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- <div class="row hover"> -->
+                    <a class="col-icon"><img src="./images/icon-facebook.svg" class="col-icon-img"></a>
+                    <a class="col-icon"><img src="./images/icon-instagram.svg" class=" col-icon-img"></a>
+                    <a class="col-icon"><img src="./images/icon-linkedin.svg" class=" col-icon-img"></a>
+                    <a class="col-icon"><img src="./images/icon-twitter.svg" class=" col-icon-img"></a>
+                </div>
+                <div class="col-md-6">
+                    <img src="./images/app-store-apple-f1f919205b.svg" alt="google play" class=" APP">
+                    <img src="./images/app-store-google-4d63c31a3e.svg" alt="appstore" class=" APP">
+                </div>
+            </div>
+
+            <div class="row col-md-top">
+                <div class="col-md-6">
+                    <p>© 2021 Uber Technologies Inc.</p>
+                </div>
+
+                <div class="col-md-6 ">
+                    <ul>
+                        <li class="list-style"><a href="#">Privacy</a></li>
+                        <li class="list-style"><a href="#">Accessibility</a></li>
+                        <li class="list-style"><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
